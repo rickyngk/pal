@@ -255,6 +255,8 @@ public class RegisterFragment extends BaseFragment {
                                         LocalStorage.set(R.string.ls_email_history, emailList);
                                     }
 
+                                    LocalStorage.set(R.string.ls_last_success_email, email);
+                                    LocalStorage.set(R.string.ls_last_success_password, Utils.r13(password));
                                     BaseActivity.sInstance.openActivity(TimelineActivity.class);
                                 }
 
