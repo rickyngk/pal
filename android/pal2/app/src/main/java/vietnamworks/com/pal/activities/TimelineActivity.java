@@ -458,14 +458,14 @@ public class TimelineActivity extends BaseActivity {
         if (v != null) {
             if (val) {
                 applyFont(v, RobotoB, true);
-                if (Utils.isLollipopOrLater()) {
+                if (Utils.isMarshMallowOrLater()) {
                     v.setTextColor(getResources().getColor(R.color.colorTextPrimary, getTheme()));
                 } else {
                     v.setTextColor(getResources().getColor(R.color.colorTextPrimary));
                 }
             } else {
                 applyFont(v, RobotoR, true);
-                if (Utils.isLollipopOrLater()) {
+                if (Utils.isMarshMallowOrLater()) {
                     v.setTextColor(getResources().getColor(R.color.colorActionItem, getTheme()));
                 } else {
                     v.setTextColor(getResources().getColor(R.color.colorActionItem));
